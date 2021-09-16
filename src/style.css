@@ -1,131 +1,107 @@
 :root {
-  --brand-primary: rgb(108, 99, 255);
-  --font-secondary: #4d4d4d;
-  --btn-font-color: rgb(255, 255, 255);
-  --brand-secondary: #f5f2fe;
-  --font-family: "Signika", sans-serif;
-  --box-shadow: 0px 4px 10px 0 rgba(37, 39, 89, 0.5);
-}
-body {
-  font-family: var(--font-family);
-  max-width: 800px;
-  margin: 60px auto;
+  --primary-color: #6c63ff;
+  --secondary-color: #f5f2fe;
+  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
-h1,
+.container-md h1,
 h2,
 h3 {
   text-align: center;
-  margin: 0;
+  margin: 5px;
 }
-h1 {
+.container-md h1 {
   font-size: 96px;
 }
-h2 {
+
+.container-md h2 {
   font-size: 48px;
 }
 
-h3 {
+.container-md h3 {
   font-size: 24px;
-  color: var(--font-secondary);
-  font-weight: 500;
+  opacity: 0.7;
 }
 
-.buttons {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  margin: 5em auto;
-  white-space: normal;
-}
-
-.about-me,
-.contact-me {
-  margin: 0 24px;
-  text-decoration: none;
-  padding: 28px 15px;
-  border-radius: 5px;
-}
-
-.about-me {
-  border: 1px solid var(--brand-primary);
-  color: var(--brand-primary);
-}
-.contact-me {
-  background-color: var(--brand-primary);
-  box-shadow: var(--box-shadow);
-  color: var(--btn-font-color);
-}
-
-/*About Page specific styling*/
-
-.container-about {
-  margin-top: 6%;
-}
-
-.home-link-div {
-  margin-bottom: 15px;
-}
-
-.home-link {
-  color: var(--brand-primary);
-  display: flex;
-  justify-content: center;
-}
-
-.home-link:visited {
-  color: var(--brand-primary);
-  opacity: 0.6;
-}
-.about-me-header {
-  font-size: 6rem;
-  margin-top: 40px;
-}
-.about-subtitle {
-  font-size: 1.5em;
-}
-
-.info {
-  display: flex;
-  justify-content: center;
+p {
+  padding: 20px;
+  border-radius: 4px;
+  font-size: 18px;
   line-height: 1.5;
-}
-
-.info-left,
-.info-right {
-  margin: 30px 10px;
-  padding: 18px 20px;
-  border-radius: 10px;
-  background-color: var(--brand-secondary);
-  max-width: 350px;
-  font-size: 1.2em;
   text-align: center;
 }
 
-@media only screen and (max-width: 400px) {
-  .info-left,
-  .info-right {
-    font-size: 14px;
-  }
-  .info {
-    display: grid;
-  }
-}
-
-.contact-area {
-  font-size: 3em;
-}
-.email {
-  color: var(--brand-primary);
-  font-size: 1.7em;
-  text-decoration: none;
+.navigation-links {
   display: flex;
+  margin-top: 40px;
   justify-content: center;
 }
-.email:hover {
-  text-decoration: underline;
-  font-weight: 500;
+
+.navigation-links a {
+  margin: 20px;
+  border-radius: 4px;
+  padding: 20px 15px;
+  text-decoration: none;
+  text-transform: capitalize;
 }
-.email:focus {
-  outline: none;
+
+.contact-link {
+  background: var(--primary-color);
+  box-shadow: var(--box-shadow);
+  color: white;
+}
+
+.about-link {
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+.homepage-link {
+  color: var(--primary-color);
+  text-align: center;
+  display: block;
+}
+
+.about-paragraphs {
+  display: flex;
+  margin: 30px 0;
+}
+
+.about-paragraphs p {
+  margin: 10px;
+}
+
+.email-link {
+  display: flex;
+  justify-content: center;
+  color: var(--primary-color);
+  font-size: 28px;
+  text-decoration: none;
+}
+
+.email-link:hover {
+  text-decoration: underline;
+}
+
+#button-style-1, #button-style-2, #button-style-3 {
+  margin: 20px 0;
+  border-radius: 4px;
+  border: 2px solid var(--primary-color);
+  padding: 18px 13px;
+  text-decoration: none;
+  text-transform: capitalize;
+  background: var(--primary-color);
+  box-shadow: var(--box-shadow);
+  color: white;
+  transition: all 150ms ease-in-out;
+}
+
+#button-style:hover {
+  color: black;
+  background: none;
+  border: 2px solid var(--primary-color);
+}
+
+.about-me-h1 {
+  font-size: 91px;
 }
