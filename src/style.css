@@ -107,6 +107,12 @@ p {
 }
 
 @media (max-width: 500px){
+  .container-md h1{
+    font-size: 56px;
+  }
+  .container-md h2{
+    font-size: 40px;
+  }
   .img-1, .img-2, .img-3{
     display: none;
   }
