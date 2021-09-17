@@ -105,3 +105,15 @@ p {
 .about-me-h1 {
   font-size: 91px;
 }
+
+@media (max-width: 500px){
+  .img-1, .img-2, .img-3{
+    display: none;
+  }
+  #button-style-1, #button-style-2, #button-style-3 {
+    width: 100%;
+  }
+  .container{
+    text-align: center;
+  }
+}
